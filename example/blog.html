@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://i.imgur.com/uNJwWZz.png');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+      font-family: Lucida;
+    
+    }
+    h2{font-style: italic;
+      font-size: 25px;
+      font-family: Lucida;
+      }
+    img {
+      margin: 10px 0px 10px 0px;
+      border:  solid white;
+       width:250px;
+      height:250px;
+      border-radius:50%;
+      
+    }
+    ul {
+      padding: 10px;
+      background: rgba(106,198,25,0.22);    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src=https://i.imgur.com/daTfK00.jpeg>
+    <h1>My Travel Blog</h1>
+    <h2>Photographer & Professional Blogger</h2>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Trips</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Yosemite National Park</h2><h2 style="font-family: times roman" >10/10/20</h2>
+    <img src="https://i.imgur.com/vbW1XRo.jpg" style="float:left">
+    <p>Yosemite National Park is an American national park in Northern California, surrounded on the southeast by Sierra National Forest and on the northwest by Stanislaus National Forest. The park is managed by the National Park Service and covers an area of 748,436 acres and sits in four counties: centered in Tuolumne and Mariposa, extending north and east to Mono and south to Madera County. Designated a World Heritage Site in 1984, Yosemite is internationally recognized for its granite cliffs, waterfalls, clear streams, giant sequoia groves, lakes, mountains, meadows, glaciers, and biological diversity.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Joshua Tree National Park</h2><h2 style="font-family: times roman" >11/10/20</h2>
+    <img src="https://i.imgur.com/jdowua6.jpg" style="float:left">
+    <p>Joshua Tree National Park is an American national park in southeastern California, east of Los Angeles and near Palm Springs. It is named after the Joshua trees native to the Mojave Desert. Originally declared a national monument in 1936, Joshua Tree was redesignated as a national park in 1994.</p>
+
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
+ 
